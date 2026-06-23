@@ -1,32 +1,48 @@
-import Link from "next/link";
-
 export default function Footer() {
   return (
-    <footer className="bg-gray-950 border-t border-gray-800 py-10 mt-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-6 md:space-y-0">
+    <footer className="bg-gray-950 border-t border-gray-800 py-12 mt-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
         
-        {/* लेफ्ट साइड: लोकल SEO और दुकान का नाम */}
-        <div>
+        {/* Unit 1: About & Shop Name */}
+        <div className="space-y-3">
           <h2 className="text-xl font-bold text-white tracking-widest uppercase">
-            Premium <span className="text-orange-500">Fabrication</span>
+            F.D Saifi <span className="text-orange-500">Fabrication</span>
           </h2>
-          {/* यह लाइन गूगल सर्च में साउथ एक्सटेंशन में रैंक करने में मदद करेगी */}
-          <p className="text-gray-400 text-sm mt-2">South Extension Part 2, New Delhi</p>
+          <p className="text-gray-400 text-sm leading-relaxed">
+            Premium quality steel gates, railings, rolling shutters, and structural welding works in Delhi.
+          </p>
         </div>
         
-        {/* बीच में: काम की जानकारी और नंबर */}
-        <div className="text-gray-400 text-sm space-y-1">
-          <p>Top-Quality Gates, Railings & Industrial Sheds</p>
-          <p>📞 +91 00000 00000</p>
+        {/* Unit 2: Exact Location */}
+        <div className="space-y-3">
+          <h3 className="text-white font-bold text-md uppercase tracking-wider">Our Workshop</h3>
+          <p className="text-gray-400 text-sm leading-relaxed">
+            Shop no. 45 Sohan Lal mkt,<br />
+            Masjid Moth, South Extn, Part 2,<br />
+            New Delhi - 110049
+          </p>
+        </div>
+        
+        {/* Unit 3: Contact Persons */}
+        <div className="space-y-3">
+          <h3 className="text-white font-bold text-md uppercase tracking-wider">Contact Us</h3>
+          <div className="text-gray-400 text-sm space-y-2">
+            <p className="hover:text-white transition-colors">
+              👤 <span className="text-white font-medium">Saddam Saifi:</span> <a href="tel:+919990136551">+91 99901 36551</a>
+            </p>
+            <p className="hover:text-white transition-colors">
+              👤 <span className="text-white font-medium">Sabir Saifi:</span> <a href="tel:+917532970755">+91 75329 70755</a>
+            </p>
+          </div>
         </div>
 
       </div>
       
-      {/* सबसे नीचे: आपका 'मार्केटिंग मैग्नेट' (A S Tech Solutions) */}
-      <div className="mt-8 text-center text-gray-500 text-xs border-t border-gray-800 pt-6 max-w-7xl mx-auto px-4">
-        &copy; {new Date().getFullYear()} Premium Fabrication Works. All rights reserved. <br/>
-        <span className="mt-3 inline-block text-gray-400">
-          Engineered & Designed by <a href="mailto:aarifsaifi4180@gmail.com" className="text-orange-500 font-bold tracking-wide hover:text-white transition-colors duration-300 drop-shadow-[0_0_8px_rgba(249,115,22,0.6)]">A S Tech Solutions</a>
+      {/* Footer Bottom (Your Brand Advertisement) */}
+      <div className="mt-12 text-center text-gray-500 text-xs border-t border-gray-900 pt-6 max-w-7xl mx-auto px-4">
+        &copy; {new Date().getFullYear()} F.D Saifi Fabrication. All rights reserved. <br/>
+        <span className="mt-3 inline-block text-gray-400 text-sm">
+          Website Coded & Managed by <a href="mailto:aarifsaifi4180@gmail.com" className="text-orange-500 font-bold tracking-wide hover:text-white transition-all duration-300 drop-shadow-[0_0_8px_rgba(249,115,22,0.6)]">A S Tech Solutions</a>
         </span>
       </div>
     </footer>
