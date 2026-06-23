@@ -38,11 +38,19 @@ export default function Footer() {
 
       </div>
       
-      {/* Footer Bottom (Your Brand Advertisement) */}
+      {/* Footer Bottom (Your Brand Advertisement with Live Portfolio Link) */}
       <div className="mt-12 text-center text-gray-500 text-xs border-t border-gray-900 pt-6 max-w-7xl mx-auto px-4">
         &copy; {new Date().getFullYear()} F.D Saifi Fabrication. All rights reserved. <br/>
         <span className="mt-3 inline-block text-gray-400 text-sm">
-          Website Coded & Managed by <a href="mailto:aarifsaifi4180@gmail.com" className="text-orange-500 font-bold tracking-wide hover:text-white transition-all duration-300 drop-shadow-[0_0_8px_rgba(249,115,22,0.6)]">A S Tech Solutions</a>
+          Website Coded & Managed by{" "}
+          <a 
+            href="https://astech-one.vercel.app/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-orange-500 font-bold tracking-wide hover:text-white transition-all duration-300 drop-shadow-[0_0_8px_rgba(249,115,22,0.6)]"
+          >
+            A S Tech Solutions
+          </a>
         </span>
       </div>
     </footer>
